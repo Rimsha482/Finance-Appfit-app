@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appfit - Secure Your Finances</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+ <!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="#">
+      <img src="images/logo-01.webp" alt="Appfit Logo" class="logo-img me-2" />
+    </a>
+
+    <!-- Toggler (for mobile) -->
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links + Buttons -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center me-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-center text-white" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 16px;">
+            HOME
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+            <li><a class="dropdown-item" href="#home1">Home 1</a></li>
+            <li><a class="dropdown-item" href="#home2">Home 2</a></li>
+            <li><a class="dropdown-item" href="#home3">Home 3</a></li>
+            <li><a class="dropdown-item" href="#home4">Home 4</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#" style="font-size: 16px;">ABOUT</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style="font-size: 16px;">
+            FEATURES
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#feature1">Feature 1</a></li>
+            <li><a class="dropdown-item" href="#feature2">Feature 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style="font-size: 16px;">
+            PAGES
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#team">Team</a></li>
+            <li><a class="dropdown-item" href="#team-detail">Team Detail</a></li>
+            <li><a class="dropdown-item" href="#pricing">Pricing</a></li>
+            <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+            <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+            <li><a class="dropdown-item" href="#comingsoon">Coming Soon</a></li>
+            <li><a class="dropdown-item" href="#search">Search Result</a></li>
+            <li><a class="dropdown-item" href="#error">404 Error</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style="font-size: 16px;">
+            BLOGS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#blog1">Blog Listing</a></li>
+            <li><a class="dropdown-item" href="#blog2">Blog Detail</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#" style="font-size: 16px;">CONTACT</a>
+        </li>
+      </ul>
+
+      <!-- Search Icon + Get Started -->
+      <div class="d-flex align-items-center gap-3">
+        <!-- Search Icon -->
+        <button class="search-svg-btn">
+          <svg aria-hidden="true" class="search-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 
+            44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 
+            208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 
+            99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 
+            9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 
+            0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 
+            128 0 70.7-57.2 128-128 128z" />
+          </svg>
+        </button>
+
+        <!-- Get Started Button -->
+        <button class="get-started-box-btn" style="font-size: 16px;">
+          <span>Get Started</span>
+          <svg class="arrow-icon ms-2" xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="#f0f0f0" viewBox="0 0 24 24">
+            <path d="M13 5l7 7-7 7M5 12h14" stroke="#21225B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="hero-bg"></div> <!-- Grid background -->
+
+    <div class="container position-relative z-2">
+      <h1>Secure Your Finances<br>With Our <span class="appfit-text">
+  <span>A</span>
+  <span>P</span>
+  <span>P</span>
+  <span>F</span>
+  <span>I</span>
+  <span>T</span>
+</span> App</h1>
+      <p class="lead mt-3 mb-5">
+        Cras phasellus faucibus provident occaecat praesentium, iusto nunc cursus!<br />
+        Ac morbi architecto tincidunt curabitur.
+      </p>
+
+      <!-- Mobile UI Image -->
+      <div class="mobile-image">
+        <img src="images/home 1.png" alt="App Mobile UI" class="img-fluid phone" />
+      </div>
+    </div>
+  </section>
+<!-- Trusted Companies -->
+<section class="trusted-section text-center py-5">
+  <h5 class="text-uppercase fw-bold mb-6 text-white">Trusted By 20,000+ Customers Across The World</h5>
+  <div class="container d-flex flex-wrap justify-content-center gap-4 mb-5">
+    <img src="images/logo.2.webp" class="trusted-logo" alt="Zapier" />
+    <img src="images/logo.3.webp" class="trusted-logo" alt="Spotify" />
+    <img src="images/logo.4.webp" class="trusted-logo" alt="Magento" />
+    <img src="images/logo.5.webp" class="trusted-logo" alt="Slack" />
+    <img src="images/logo.6.webp" class="trusted-logo" alt="Jira" />
+  </div>
+  <!-- Stats Box -->
+  <div class="container stats-box my-6" style="width: 70%;">
+  <div class="row text-white text-center justify-content-center">
+    <div class="col-md-4 mb-3 mb-md-0">
+      <h4 class="fw-bold">READY TO SCALE</h4>
+      <p>Donec bibendum, dui id ultrices molestie, neque neque portafeli, id viverra ligula justo.</p>
+    </div>
+
+    <div class="col-md-2 stat-item border-col">
+      <h3 class="fw-bold">30M+</h3>
+      <svg class="zigzag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 8" fill="none">
+        <polyline points="0,8 5,0 10,8 15,0 20,8 25,0 30,8 35,0 40,8" stroke="white" stroke-width="1.5" />
+      </svg>
+      <p class="fw-bold">Total Download</p>
+    </div>
+
+    <div class="col-md-3 stat-item border-col">
+      <h3 class="fw-bold counter" data-target="805">0</h3>
+      <svg class="zigzag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 8" fill="none">
+        <polyline points="0,8 5,0 10,8 15,0 20,8 25,0 30,8 35,0 40,8" stroke="white" stroke-width="1" />
+      </svg>
+      <p class="fw-bold">Positive Review</p>
+    </div>
+
+    <div class="col-md-3 stat-item">
+      <h3 class="fw-bold counter" data-target="99">0</h3>
+      <svg class="zigzag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 8" fill="none">
+        <polyline points="0,8 5,0 10,8 15,0 20,8 25,0 30,8 35,0 40,8" stroke="white" stroke-width="1" />
+      </svg>
+      <p class="fw-bold">Happy Customer</p>
+    </div>
+  </div>
+</div>
+
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".counter");
+  const speed = 200; // Lower = faster
+
+  const startCounting = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    const updateCount = () => {
+      const count = +counter.innerText.replace(/\D/g, "");
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 20);
+      } else {
+        // Add formatting back after completion
+        if (target >= 1000000) {
+          counter.innerText = (target / 1000000) + "M+";
+        } else if (target >= 1000) {
+          counter.innerText = target + "+";
+        } else {
+          counter.innerText = target + "%";
+        }
+      }
+    };
+    updateCount();
+  };
+
+  // Trigger counting only when visible
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounting(entry.target);
+        obs.unobserve(entry.target); // Run once
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => observer.observe(counter));
+});
+</script>
+<!-- Feature Heading -->
+<section class="key-features py-5" style="background-color: #1b1f6b;">
+<h1 class="text-white fw-bold fa-3x mb-5" style="margin-left: 17%;">Wide Range Of Key <br>Features</h1>
+  <div class="container">
+    <div class="row cards-container">
+      <!-- Left Column: 4 Feature Cards -->
+      <div class="col-md-7">
+      <div class="row g-4 align-items-stretch">
+
+          <!-- Card 1 -->
+          <div class="col-md-6">
+            <div class="feature-card p-2 text-start text-white h-100 " style="background-color: #222571;">
+               <button class="mango-btn">
+              <i class="fas fa-code fa-2x mb-3 "></i>
+              </button>
+              <h5 class="fw-bold">Fully Functional</h5>
+              <p>Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6">
+            <div class="feature-card p-2 text-start text-white h-100 " style="background-color: #222571;">
+             <button class="mango-btn">
+              <i class="fas fa-building fa-2x mb-3"></i>
+              </button>
+
+              <h5 class="fw-bold">Easy To Edit</h5>
+              <p>Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6">
+            <div class="feature-card p-2 text-start text-white h-100 " style="background-color: #222571;">
+             <button class="mango-btn">
+              <i class="bi bi-headset fa-2x mb-3"></i>
+              </button>
+               <h5 class="fw-bold">Customer Support</h5>
+              <p>Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+           <div class="col-md-6">
+            <div class="feature-card p-2 text-start text-white h-100 " style="background-color: #222571;">
+             <button class="mango-btn">
+              <i class="fas fa-code fa-2x mb-3 "></i>
+              </button>
+               <h5 class="fw-bold">Fully Functional</h5>
+              <p>Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-4 mt-3 mt-md-0">
+        <div class="feature-card p-2 text-white text-start d-flex flex-column align-items-start justify-content-between " style="background-color: #222571;">
+          
+          <!-- Icon and Text -->
+         <div class="col-md-8">
+            <div class="feature-card p-2 text-start text-white " style="background-color: #222571;">
+                <button class="mango-btn">
+              <i class="bi bi-headset fa-2x mb-3"></i>
+              </button>   
+             <h5 class="fw-bold">Customer Support</h5>
+              <p>Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature.</p>
+            </div>
+          </div>
+
+          <!-- Image Inside Card -->
+          <div class="text-center w-100 mt-3">
+            <img src="images/customer.png" alt="App Preview" class="img-fluid phone-img" style="max-height: 200px;" >
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Appfit Only Section -->
+<section class="appfit-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Text Box -->
+      <div class="col-lg-7" style="  flex: 0 0 auto; width: 93%; margin-left: 85px; margin-top: -70px;">
+        <div class="appfit-box d-flex justify-content-between align-items-center p-4">
+          <h3 class="text-white fw-bold m-0">The Only Appfit App That <br> Meets All Your Needs</h3>
+          <a href="#" class="explore-btn">EXPLORE MORE <span>→</span></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Discover Keywords Section -->
+<section class="discover-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left: Images and Buttons -->
+      <div class="col-md-5 text-center mb-4 mb-md-0 position-relative" style="margin-left: 78px;">
+        <img src="images/discover high.png" alt="Phone UI" class="img-fluid phone-main" />
+        <div class="phone-buttons">
+        </div>
+      </div>
+      <!-- Right: Text Content -->
+      <div class="col-md-5 text-white" style="margin-left: 62px;">
+
+        <h2 class="fw-bold display-6">Discover High-Impact Keywords</h2>
+        <p class="mt-3 mb-4">
+          State burst think end are its. Arrived off she elderly beloved him affixed noisier yet. Course regard to up he hardly.
+        </p>
+        <ul class="list-unstyled mb-4">
+          <li>✔ We completed 500+ client’s projects</li>
+          <li>✔ We have 10+ multiple developer</li>
+          <li>✔ 100+ active client’s working with us</li>
+        </ul>
+        <button class="btn px-3 py-2" style="border-radius: 22px 0px 22px 0px; background-color: #21225b; width: auto;
+        color: #ffffff;
+        border-color: #2f33a1;">
+          DISCOVER MORE <i class="bi bi-arrow-right ms-2"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Manage Tasks Section with Image -->
+<section class="manage-tasks-section py-5">
+  <div class="container">
+    <div class="row align-items-center big-task-box p-4 p-md-5 text-white mx-auto">
+      
+      <!-- Left Content -->
+      <div class="col-md-6 text-center text-md-start">
+        <h2 class="fw-bold mb-3">Manage Tasks Increase Productivity</h2>
+        <p class="mb-4">
+          State burst think end are its. Arrived off she elderly beloved him affixed noisier yet. <br />
+          Course regard to up he hardly.
+        </p>
+        <ul class="list-unstyled mb-4">
+          <li>✔ We completed 500+ client’s projects</li>
+          <li>✔ We have 10+ multiple developer</li>
+          <li>✔ 100+ active client’s working with us</li>
+        </ul>
+        <button class="btn px-4 py-2" style="border-radius: 22px 0px 22px 0px; background-color: #21225b; width: auto;
+        color: #ffffff;
+        border-color: #5457c3fa;">
+          LEARN MORE <i class="bi bi-arrow-right ms-2"></i>
+        </button>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-6 text-center mt-4 mt-md-0 position-relative">
+  <!-- Circle background -->
+  <div class="circle-bg"></div>
+  
+  <!-- Image -->
+  <img src="images/manage task.webp" alt="Dashboard UI" 
+       class="img-fluid rounded-4 task-image" 
+       style="max-width: 450px;">
+</div>
+
+
+    </div>
+  </div>
+</section>
+<!-- Advanced Control Section -->
+<section class="feature-highlight ">
+  <div class="container">
+    <div class="row align-items-center text-white">
+      <!-- Left Column: Text -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <span class="badge bg-white text-primary   ">Advanced Control</span>
+        <h2 class="fw-bold mb-3">Unlock A Superior Customer Experience</h2>
+        <p class="mb-4">Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</p>
+        <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2">Learn More →</a>
+      </div>
+
+      <!-- Right Column: Icons & Phones -->
+     <div class="col-lg-6">
+  <div class="row text-start mb-4">
+
+    <!-- File Icon -->
+    <div class="col-6 mb-3">
+      <div class="d-flex align-items-start">
+        <div class="icon-circle me-2">
+          <i class="bi bi-file-earmark-text" style="font-size: 35px;"></i>
+        </div>
+        <div>
+          <strong>Data Analysis</strong><br />
+          <small>Maintain app data </small>
+        </div>
+      </div>
+    </div>
+    <!-- Download -->
+    <div class="col-6 mb-3">
+      <div class="d-flex align-items-start">
+        <div class="icon-circle me-2">
+          <i class="bi bi-cloud-download" style="font-size: 35px;"></i>
+        </div>
+        <div>
+          <strong>Update App</strong><br />
+          <small>You will get update</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Analysis -->
+    <div class="col-6 mb-3">
+      <div class="d-flex align-items-start">
+        <div class="icon-circle me-2">
+          <i class="bi bi-bar-chart-line" style="font-size: 35px;"></i>
+        </div>
+        <div>
+          <strong>Growth Report</strong><br />
+          <small>Daily growth report</small>
+        </div>
+      </div>
+    </div>
+    <!-- Shield / Security -->
+    <div class="col-6 mb-3">
+      <div class="d-flex align-items-start">
+        <div class="icon-circle me-2">
+          <i class="bi bi-shield-check" style="font-size: 35px;"></i>
+        </div>
+        <div>
+          <strong>High Security</strong><br />
+          <small>All features secure</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Phone Mockup Image -->
+  <div class="text-center">
+    <img src="Android-Phone-Mockup.webp" alt="Phone" class="img-fluid" style="min-height: 400px;" />
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+<!-- Pricing Section -->
+<section class="pricing-section py-5">
+  <div class="container text-center">
+    <h2 class="text-white fw-bold mb-5">Choose Our Pricing Plan</h2>
+    <div class="row justify-content-center g-5">
+      <!-- Premium Card -->
+      <div class="col-md-5">
+        <div class="top-card text-white text-center">
+          <h3>Pro Package</h3>
+        </div>
+        <div class="elementor-price-table__ribbon-inner">
+					Popular				</div>
+        <div class="bottom-card text-white text-start">
+          <ul class="list-unstyled text-center large ">
+           <div class="price display-3  fw-bold">$39<sup>.99</sup><small class="fs-6"> /month</small></div><br>
+            <li>30 days consultancy</li>
+          <div class="col-12 text-center my-4"> <hr class="dashed-line" /></div>
+            <li>Up to 10 agents hire</li>
+                      <div class="col-12 text-center my-4"> <hr class="dashed-line" /></div>
+            <li>24/7 Hours supper support</li>
+                      <div class="col-12 text-center my-4"> <hr class="dashed-line" /></div>
+            <li>Priority response</li>
+          </ul>
+          <div class="text-center">
+            <a href="#" class="btn">CHOOSE</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise Card -->
+      <div class="col-md-5">
+        <div class="top-card text-white text-center">
+          <h4 class="fw-bold">Enterprise</h4>
+                    <h3>Pro Package</h3>
+        </div>
+        <div class="bottom-card text-white text-start">
+          <ul class="list-unstyled text-center large">
+          <div class="price display-3 fw-bold">$199<sup>.99</sup><small class="fs-6"> /month</small></div>
+            <li>30 days consultancy</li>
+                      <div class="col-12 text-center my-4"> <hr class="dashed-line" /></div>
+            <li>API integration for trading</li>
+                      <div class="col-12 text-center my-4"> <hr class="dashed-line" /></div>
+            <li>Up to 10 agents hire</li>
+                      <div class="col-12 text-center my-4"> <hr class="dashed-line" /></div>
+            <li>Priority customer support</li>
+                      <div class="col-12 text-center my-4"> <hr class="dashed-line" /></div>
+            <li>Dedicated account manager</li>
+          </ul>
+          <div class="text-center">
+            <a href="#" class="btn ">CHOOSE</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Client Reviews Section -->
+<section class="reviews-section">
+  <div class="container">
+
+    <!-- Header Row -->
+    <div class="reviews-header">
+      <div class="left-text">
+        <h1 class="fw-bold">Positive reviews of our <br>clients</h1>
+      </div>
+      <div class="right-text">
+        <p>Real experiences, real connections—see why users love Strivex for staying connected effortlessly.</p>
+                <p>1120 Total user reviews
+                <i class="bi bi-arrow-right ms-2"></i>
+                
+      </div>
+    </div>
+
+    <!-- Review Cards Section -->
+<div class="review-cards">
+  
+  <!-- Card 1 -->
+  <div class="review-card">
+    <div class="review-header">
+      <img src="john.webp" alt="John Doe" class="avatar-img">
+      <div class="user-info">
+        <h5>John Doe</h5>
+        <div class="designation">Designation</div>
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="review-card">
+    <div class="review-header">
+      <img src="john 1.webp" alt="John Doe" class="avatar-img">
+      <div class="user-info">
+        <h5>John Doe</h5>
+        <div class="designation">Designation</div>
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+  </div>
+
+  <!-- You can copy more cards here following same format -->
+
+</div>
+
+    </div>
+  </div>
+</section>
+<!-- Insights & Stories Section -->
+<section class="insights-section py-5">
+  <div class="container text-center">
+    <h2 class="section-title">Insights & Stories</h2>
+    <div class="row justify-content-center" style="margin-left: 50px;">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="insight-card">
+          <img src="insight1.webp" alt="Story 1" class="img-fluid rounded-top" style="margin-left: 0px;">
+          <div class="card-content p-3">
+            <h5 class="fw-bold">A Comprehensive Guide To Modern Development</h5>
+            <p>It is a long established fact that a reader will</p>
+            <div class="card-meta">February 5, 2024 | 1 Comment</div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="insight-card">
+          <img src="insight2.webp" alt="Story 2" class="img-fluid rounded-top"style="margin-left: 0px;">
+          <div class="card-content p-3">
+            <h5 class="fw-bold">Global Leaders Announce Historic Climate Agreement</h5>
+            <p>It is a long established fact that a reader will</p>
+            <div class="card-meta">February 15, 2024 | No Comments</div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="insight-card">
+          <img src="insight3.jpg" alt="Story 3" class="img-fluid rounded-top" style="margin-left: 0px;">
+          <div class="card-content p-3">
+            <h5 class="fw-bold">Digital How Agencies Can Stay Ahead In Business</h5>
+            <p>It is a long established fact that a reader will</p>
+            <div class="card-meta">February 15, 2024 | No Comments</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FAQ & Form Section -->
+<section class="faq-form-section py-5">
+  <div class="container-lg">
+    <div class="row" style="margin-left: 50px;">
+
+      <!-- Form Column -->
+      <div class="col-md-5">
+        <div class="faq-form-box ">
+          <h5 class="fw-bold text-white mb-3" style="margin-left: 23px; margin-top: 13px;">Didn’t Find Your Answer? <br> Submit Your Question</h5>
+          <form>
+            <input type="text" class="form-control  mb-3" placeholder="Name">
+            <input type="email" class="form-control mb-3" placeholder="Email">
+            <input type="text" class="form-control mb-3" placeholder="Subject">
+            <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-dark w-100">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Accordion Column -->
+      <div class="col-md-6">
+        <h5 class="fw-bold text-white mb-5">Benefits & What We Do?</h5>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                1. WHAT TYPE OF TRAVEL PACKAGES DOES WE OFFER?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                2. STEPS TO BUY YOUR DREAM LUXURY HOME
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                3. HOW LONG I CAN CONTINUE FREE PLAN?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">   
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                4. IS IT POSSIBLE TO INTEGRATE PLUGIN?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">   
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Download CTA Section -->
+<section class="download-section position-relative text-center py-5">
+  <!-- Grid background -->
+  <div class="download-grid-bg"></div>
+
+  <div class="container position-relative z-2">
+    
+    <h1 class="download-heading mb-4">Let’s Download<br>Appfit Mobile App Free</h1>
+
+    <p class="download-text mb-4">
+      State burst think end are its. Arrived off she elderly beloved him affixed noisier yet.<br>
+      Course regard to up he hardly.
+    </p>
+    
+    <button class="download-btn white-btn">
+      Download Now
+      <svg class="arrow-icon ms-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#4042a1" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793L9.146 4.354a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </button>
+  </div>
+</section>
+<footer class="footer-section py-5 text-white" style="background-color: #2e329f;">
+  <div class="container">
+    <div class="row" style="margin-left: 50px;">
+      <!-- Column 1: Logo, Paragraph, Social Icons -->
+      <div class="col-md-3 mb-4 text-center text-md-start">
+        <!-- Logo -->
+        <img src="images/logo-01.webp" alt="Appfit Logo" style="width: 150px; height: auto; margin-bottom: 15px;" />
+
+        <!-- Paragraph -->
+        <p style="font-size: 14px; color: #ffffff;">
+          State burst think end are its. Arrived off she elderly beloved him affixed noisier yet. Course regard to up he hardly.
+        </p>
+
+        <!-- Follow Us with Social Buttons -->
+        <h6 class="mt-3 mb-2" style="color: #ffffff;">Follow Us</h6>
+        <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+          <a href="#" class="btn btn-outline-light " aria-label="Facebook" style="border-radius: 10px 0px 10px 0px ;">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="btn btn-outline-light" aria-label="Twitter" style="border-radius: 10px 0px 10px 0px ;">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="btn btn-outline-light" aria-label="Instagram" style="border-radius: 10px 0px 10px 0px ;">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-outline-light" aria-label="YouTube" style="border-radius: 10px 0px 10px 0px ;">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Company Info -->
+      <div class="col-md-3 mb-4">
+        <h5 style="color: #ffffff;">Company</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">About Us</a></li>
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Services</a></li>
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">News & Articles</a></li>
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Useful Links -->
+      <div class="col-md-3 mb-4">
+        <h5 style="color: #ffffff;">Useful Links</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Partnerships</a></li>
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Privacy</a></li>
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Features -->
+      <div class="col-md-3 mb-4">
+        <h5 style="color: #ffffff;">Features</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Paid Features</a></li>
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Management</a></li>
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Projects</a></li>
+          <li><i class="fas fa-angle-right me-2"></i><a href="#" class="text-white text-decoration-none">Task Assignment</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center mt-4 pt-3 border-top border-light">
+      <p class="mb-0" style="color: #ffffff;">&copy; 2025 Appfit. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
